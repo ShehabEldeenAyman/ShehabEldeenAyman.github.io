@@ -5,4 +5,5 @@
     foaf:age "27" ;
     foaf:mbox <mailto:shehab@vito.be> ;
     foaf:based_near "boeretang" ;
-    foaf:knows <https://pietercolpaert.be/> .
+    foaf:knows <https://pietercolpaert.be/> ;
+    foaf:knows <https://bocaopubliq.github.io/link_data_solid_study/> .
