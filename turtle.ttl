@@ -1,14 +1,8 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-@prefix test:<https://example.org/>.
-
-
-test:person
-    test:name "shehab";
-    test:age 27;
-    test:status "student";
-    test:address "boeretang";
-    test:email "shehab@vito.be".
-
-    
-
-
+<#Shehab> a foaf:Person ;
+    foaf:name "Shehab" ;
+    foaf:age "27" ;
+    foaf:mbox <mailto:shehab@vito.be> ;
+    foaf:based_near "boeretang" ;
+    foaf:knows <https://pietercolpaert.be/> .
