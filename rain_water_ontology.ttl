@@ -2,6 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix ex:   <http://example.org#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 ex:RainWaterOntology a owl:Ontology ;
     rdfs:label "Rain Water Ontology" ;
@@ -180,5 +181,11 @@ ex:FilteredBy a owl:ObjectProperty ;
 
 ex:DisinfectedBy a owl:ObjectProperty ;
     rdfs:label "Disinfected by property".
+
+ex:hasReading a owl:DatatypeProperty ;
+    rdfs:label "has reading" ;
+    rdfs:comment "Holds the reading value of a sensor" ;
+    rdfs:domain ex:WaterQualitySensor ;
+    rdfs:range xsd:float .
 
 ###########################################################
